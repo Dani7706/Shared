@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    /> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,700&family=Montserrat:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>Shared</title>
+  </head>
+  <body>
+    <header class="header">
+      <a href="../html/index.html" class="header__logo">
+        <img src="../img/logo.svg" alt="Logo" class="logo" />
+      </a>
+      <form action="#" class="header__search">
+        <input type="text" class="header__input" placeholder="Search" />
+        <button class="btn--search">
+          <svg class="header__search__icon">
+            <use xlink:href="../img/sprite.svg#icon-search"></use>
+          </svg>
+        </button>
+      </form>
+      <button class="header__menu__btn" id="icon-open">
+        <svg class="header__menu__icon">
+          <use xlink:href="../img/sprite.svg#icon-bars"></use>
+        </svg>
+      </button>
+      <div class="header__menu__background">&nbsp;</div>
+      <div class="header__menu">
+        <svg class="header__menu__icon--close" id="icon-close">
+          <use xlink:href="../img/sprite.svg#icon-close"></use>
+        </svg>
+        <ul class="header__menu__list">
+          <li class="header__menu__item">
+            <a href="../html/index.html" class="header__menu__link">Начало</a>
+          </li>
+          <li class="header__menu__item">
+            <a href="../html/all.html" class="header__menu__link">Споделено</a>
+          </li>
+          <li class="header__menu__item">
+            <a href="../html/share.html" class="header__menu__link">Сподели</a>
+          </li>
+
+          <li class="header__menu__item">
+            <a href="../html/profile.html" class="header__menu__link">Профил</a>
+          </li>
+          <li class="header__menu__item">
+            <a href="../html/index-not-loggedIn.html" class="header__menu__link"
+              >Изход</a
+            >
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <section class="hero__section">
+        <div class="hero__text-box">
+          <h1 class="hero__title">Животът е по-хубав, когато е споделен!</h1>
+          <div class="hero__description">
+            <p class="hero__description__item">
+              Споделете как се чувствате, какви са вашите радости и неволи.
+            </p>
+            <p class="hero__description__item">
+              Споделете постиженията на децата си.
+            </p>
+            <p class="hero__description__item">
+              Разкажете за приключенията на вашите домашни палавници.
+            </p>
+            <p class="hero__description__item">
+              Или просто споделете опита си с цветята.
+            </p>
+          </div>
+          <a href="share.html" class="btn--share">Споделете</a>
+        </div>
+      </section>
+      <section class="articles__last">
+        <h2>Последни публикации</h2>
+        <div class="container">
+          <article class="article">
+            <h3 class="article__heading">Когато една врата се затваря</h3>
+            <div class="article__info">
+              <span class="article__span">публикувано от:</span>
+              <svg class="article__user-img">
+                <use xlink:href="../img/sprite.svg#icon-user"></use>
+              </svg>
+              <a href="../html/profile.html" class="article__username">
+                Dani77</a
+              >
+
+              <span class="article__span">категория:</span>
+              <a href="../html/all.html" class="article__category">Лично</a>
+            </div>
+
+            <div class="article__text">
+              <img src="../img/Hope.jpg" alt="Hope" class="article__img" />
+              <p class="article__paragraph">
+                “Когато една врата се затваря, друга се отваря, но често гледаме
+                толкова дълго към затворената, че не виждаме тази, която се е
+                отворила за нас” – Хелън Келър Когато настъпи раздяла в живота
+                ни, било то с любим човек или работа, ние сме съкрушени и не
+                спираме да мислим върху изгубеното. Постоянно търсим малките
+                камъчета, които са преобърнали живота ни. Толкова много се
+                взираме в миналото, че не забелязваме възможностите, които стоят
+                пред нас и чакат само да протегнем ръка. В живота нищо не е
+                статично, всичко търпи промяна. Само, че промяната е свързана с
+                неизвестността. Не знаем какво ще ни поднесе бъдещето и дали ще
+                успеем да се справим с новостите. Затова предпочитаме да се
+                примиряваме – с гадна работа, „добри“ приятели, нетърпим семеен
+                живот, несбъднати мечти и т.н. Толкова много се вкопчваме в
+                това, което имаме и от страх да не го загубим, стигаме дотам да
+                убедим себе си колко сме щастливи. А всъщност животът някак си
+                преди нас е разбрал, че имаме нужда от промяна.
+              </p>
+            </div>
+            <a href="../html/single-article.html" class="article__link"
+              >виж повече</a
+            >
+          </article>
+          <article class="article">
+            <h3 class="article__heading">Еленови рога</h3>
+            <div class="article__info">
+              <span class="article__span">публикувано от:</span>
+              <svg class="article__user-img">
+                <use xlink:href="../img/sprite.svg#icon-user"></use>
+              </svg>
+              <a href="../html/profile.html" class="article__username">
+                Dani77</a
+              >
+
+              <span class="article__span">категория:</span>
+              <a href="../html/all.html" class="article__category">Цветя</a>
+            </div>
+            <div class="article__text">
+              <img
+                src="../img/deer horns.jpg"
+                alt="Deer horns flower"
+                class="article__img"
+              />
+              <p class="article__paragraph">
+                Много харесвам тази папрат. Някак си е величествена. А и
+                уникалните листа – всяко е различно и интересно. Това е вторият
+                ми опит с Еленовите рога. Надявам се да е успешен. Отглеждам го
+                при непряка слънчева светлина в южна стая. Засега се чувства
+                добре.
+              </p>
+            </div>
+            <a href="../html/single-article.html" class="article__link"
+              >виж повече</a
+            >
+          </article>
+          <article class="article">
+            <h3 class="article__heading">Колекция Балкани</h3>
+            <div class="article__info">
+              <span class="article__span">публикувано от:</span>
+              <svg class="article__user-img">
+                <use xlink:href="../img/sprite.svg#icon-user"></use>
+              </svg>
+              <a href="../html/profile.html" class="article__username">
+                Dani77</a
+              >
+
+              <span class="article__span">категория:</span>
+              <a href="../html/all.html" class="article__category">Книги</a>
+            </div>
+            <div class="article__text">
+              <img
+                src="../img/collection Balkans.jpg"
+                alt="Books Balkans collection"
+                class="article__img"
+              />
+              <p class="article__paragraph">
+                Този , който не знае и не помни историята си е като дърво без
+                корен. Колекцията на Яна Язова се чете на един дъх. Толкова живо
+                и ясно са описани местата и събитията, че имах чувството, че съм
+                се пренесла през времето. Няколко месеца след прочитане на
+                трилогията, посетих някои от местата, описани в романите. Сякаш
+                вървях по стъпките на авторката. Със сигурност всеки, който иска
+                да разбере повече за нашата петвековна история, може да научи
+                много от Колекцията Балкани.
+              </p>
+            </div>
+            <a href="../html/single-article.html" class="article__link"
+              >виж повече</a
+            >
+          </article>
+        </div>
+      </section>
+      <section class="articles__top">
+        <h2>Най-харесвани публикации</h2>
+        <div class="container">
+          <article class="article">
+            <h3 class="article__heading">Когато една врата се затваря</h3>
+            <div class="article__info">
+              <span class="article__span">публикувано от:</span>
+              <svg class="article__user-img">
+                <use xlink:href="../img/sprite.svg#icon-user"></use>
+              </svg>
+              <a href="../html/profile.html" class="article__username">
+                Dani77</a
+              >
+
+              <span class="article__span">категория:</span>
+              <a href="../html/all.html" class="article__category">Лично</a>
+            </div>
+
+            <div class="article__text">
+              <img src="../img/Hope.jpg" alt="Hope" class="article__img" />
+              <p class="article__paragraph">
+                “Когато една врата се затваря, друга се отваря, но често гледаме
+                толкова дълго към затворената, че не виждаме тази, която се е
+                отворила за нас” – Хелън Келър Когато настъпи раздяла в живота
+                ни, било то с любим човек или работа, ние сме съкрушени и не
+                спираме да мислим върху изгубеното. Постоянно търсим малките
+                камъчета, които са преобърнали живота ни. Толкова много се
+                взираме в миналото, че не забелязваме възможностите, които стоят
+                пред нас и чакат само да протегнем ръка. В живота нищо не е
+                статично, всичко търпи промяна. Само, че промяната е свързана с
+                неизвестността. Не знаем какво ще ни поднесе бъдещето и дали ще
+                успеем да се справим с новостите. Затова предпочитаме да се
+                примиряваме – с гадна работа, „добри“ приятели, нетърпим семеен
+                живот, несбъднати мечти и т.н. Толкова много се вкопчваме в
+                това, което имаме и от страх да не го загубим, стигаме дотам да
+                убедим себе си колко сме щастливи. А всъщност животът някак си
+                преди нас е разбрал, че имаме нужда от промяна.
+              </p>
+            </div>
+            <a href="../html/single-article.html" class="article__link"
+              >виж повече</a
+            >
+          </article>
+          <article class="article">
+            <h3 class="article__heading">Еленови рога</h3>
+            <div class="article__info">
+              <span class="article__span">публикувано от:</span>
+              <svg class="article__user-img">
+                <use xlink:href="../img/sprite.svg#icon-user"></use>
+              </svg>
+              <a href="../html/profile.html" class="article__username">
+                Dani77</a
+              >
+
+              <span class="article__span">категория:</span>
+              <a href="../html/all.html" class="article__category">Цветя</a>
+            </div>
+            <div class="article__text">
+              <img
+                src="../img/deer horns.jpg"
+                alt="Deer horns flower"
+                class="article__img"
+              />
+              <p class="article__paragraph">
+                Много харесвам тази папрат. Някак си е величествена. А и
+                уникалните листа – всяко е различно и интересно. Това е вторият
+                ми опит с Еленовите рога. Надявам се да е успешен. Отглеждам го
+                при непряка слънчева светлина в южна стая. Засега се чувства
+                добре.
+              </p>
+            </div>
+            <a href="../html/single-article.html" class="article__link"
+              >виж повече</a
+            >
+          </article>
+          <article class="article">
+            <h3 class="article__heading">Колекция Балкани</h3>
+            <div class="article__info">
+              <span class="article__span">публикувано от:</span>
+              <svg class="article__user-img">
+                <use xlink:href="../img/sprite.svg#icon-user"></use>
+              </svg>
+              <a href="../html/profile.html" class="article__username">
+                Dani77</a
+              >
+
+              <span class="article__span">категория:</span>
+              <a href="../html/all.html" class="article__category">Книги</a>
+            </div>
+            <div class="article__text">
+              <img
+                src="../img/collection Balkans.jpg"
+                alt="Books Balkans collection"
+                class="article__img"
+              />
+              <p class="article__paragraph">
+                Този , който не знае и не помни историята си е като дърво без
+                корен. Колекцията на Яна Язова се чете на един дъх. Толкова живо
+                и ясно са описани местата и събитията, че имах чувството, че съм
+                се пренесла през времето. Няколко месеца след прочитане на
+                трилогията, посетих някои от местата, описани в романите. Сякаш
+                вървях по стъпките на авторката. Със сигурност всеки, който иска
+                да разбере повече за нашата петвековна история, може да научи
+                много от Колекцията Балкани.
+              </p>
+            </div>
+            <a href="../html/single-article.html" class="article__link"
+              >виж повече</a
+            >
+          </article>
+        </div>
+      </section>
+      <section class="articles__last">
+        <h2>Последно от коментари</h2>
+        <div class="container">
+          <div class="article">
+            <div class="comments">
+              <div class="comment__box">
+                <figure class="comment__shape">
+                  <img
+                    src="../img/edward-cisneros-_H6wpor9mjs-unsplash.jpg "
+                    alt="Photo of a woman"
+                    class="comment__img"
+                  />
+                  <figcaption class="comment__caption">Mary Roberts</figcaption>
+                </figure>
+                <p class="comment__text">
+                  Страхотна и много поучителна история.
+                </p>
+              </div>
+              <div class="comment__box">
+                <figure class="comment__shape">
+                  <img
+                    src="../img/christopher-campbell-rDEOVtE7vOs-unsplash.jpg "
+                    alt="Photo of a woman"
+                    class="comment__img"
+                  />
+                  <figcaption class="comment__caption">
+                    Cristin Campell
+                  </figcaption>
+                </figure>
+                <p class="comment__text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
+                  optio amet, harum ad reprehenderit dolorem omnis quod sed
+                  impedit dolor atque repellat numquam a libero soluta, pariatur
+                  consectetur. Blanditiis, mollitia. Lorem ipsum dolor sit amet
+                  consectetur adipisicing elit. In possimus eveniet rerum ut
+                  voluptatibus tempora, corrupti id saepe labore. Quae sunt ea
+                  at voluptatibus reprehenderit quis ipsum nesciunt possimus
+                  debitis?
+                </p>
+              </div>
+              <div class="comment__box">
+                <figure class="comment__shape">
+                  <img
+                    src="../img/ian-dooley-d1UPkiFd04A-unsplash.jpg "
+                    alt="Photo of a man"
+                    class="comment__img"
+                  />
+                  <figcaption class="comment__caption">Ian Dooley</figcaption>
+                </figure>
+                <p class="comment__text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Quidem eum voluptatibus a, harum nemo, odit recusandae eos
+                  cupiditate facilis doloremque quibusdam ad non quod nihil
+                  accusantium. Est nihil porro quod?
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="gallery">
+        <figure class="gallery__item gallery__item--1">
+          <img src="../img/Hope.jpg" alt="Photo 1" class="gallery__img" />
+        </figure>
+        <figure class="gallery__item gallery__item--2">
+          <img src="../img/img-2.jpg" alt="Photo 2" class="gallery__img" />
+        </figure>
+        <figure class="gallery__item gallery__item--3">
+          <img src="../img/img-3.jpg" alt="Photo 3" class="gallery__img" />
+        </figure>
+        <figure class="gallery__item gallery__item--4">
+          <img src="../img/img-4.jpg" alt="Photo 4" class="gallery__img" />
+        </figure>
+        <figure class="gallery__item gallery__item--5">
+          <img src="../img/img-5.jpg" alt="Photo 5" class="gallery__img" />
+        </figure>
+        <figure class="gallery__item gallery__item--6">
+          <img src="../img/img-6.jpg" alt="Photo 6" class="gallery__img" />
+        </figure>
+        <figure class="gallery__item gallery__item--7">
+          <img src="../img/img-7.jpg" alt="Photo 7" class="gallery__img" />
+        </figure>
+        <figure class="gallery__item gallery__item--8">
+          <img src="../img/img-8.jpg" alt="Photo 8" class="gallery__img" />
+        </figure>
+        <figure class="gallery__item gallery__item--9">
+          <img src="../img/img-9.jpg" alt="Photo 9" class="gallery__img" />
+        </figure>
+        <figure class="gallery__item gallery__item--10">
+          <img src="../img/img-10.jpg" alt="Photo 10" class="gallery__img" />
+        </figure>
+        <figure class="gallery__item gallery__item--11">
+          <img src="../img/img-11.jpg" alt="Photo 11" class="gallery__img" />
+        </figure>
+        <figure class="gallery__item gallery__item--12">
+          <img src="../img/img-12.jpg" alt="Photo 12" class="gallery__img" />
+        </figure>
+        <figure class="gallery__item gallery__item--13">
+          <img src="../img/img-13.jpg" alt="Photo 13" class="gallery__img" />
+        </figure>
+        <figure class="gallery__item gallery__item--14">
+          <img
+            src="../img/deer horns.jpg"
+            alt="Photo 14"
+            class="gallery__img"
+          />
+        </figure>
+      </section>
+    </main>
+    <footer class="footer">
+      <a href="index.html" class="footer__img">
+        <img src="../img/logo.svg" alt="Logo" />
+      </a>
+    </footer>
+    <script src="../scripts/script.js"></script>
+  </body>
+</html>

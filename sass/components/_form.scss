@@ -1,0 +1,107 @@
+.form {
+  grid-column: center-start/center-end;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  width: 50%;
+  margin: 0 auto;
+  @media only screen and (max-width: 62.5em) {
+    width: 60%;
+  }
+  @media only screen and (max-width: 50em) {
+    width: 80%;
+  }
+  @media only screen and (max-width: 37.5em) {
+    width: 100%;
+  }
+  &__group {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    &:first-child {
+      margin-top: 8rem;
+    }
+  }
+
+  &__label {
+    font-size: $font-size-small-3;
+    color: $color-default;
+    &--file {
+      cursor: pointer;
+      padding: 0.5rem 1rem;
+      border-radius: $border-radius-small;
+      border: $border-default;
+      color: $color-default;
+      font-size: $font-size-default;
+    }
+  }
+  &__input,
+  &__textarea,
+  &__select {
+    padding: 0.5rem 1rem;
+    border-radius: $border-radius-small;
+    border: $border-default;
+    color: $color-default;
+    font-size: $font-size-default;
+  }
+  &__input--file[type="file"] {
+    color: $color-default;
+    font-size: $font-size-default;
+
+    &::file-selector-button {
+      // &::before {
+      //   content: "Select file";
+      // }
+      // display: none;
+      border: $border-default;
+      background-color: $color-primary-light-3;
+      border-radius: $border-radius-small;
+      padding: 1rem 2rem;
+      color: inherit;
+      font-size: inherit;
+
+      &:hover {
+        background-color: $color-primary;
+        color: $color-primary-light-2;
+        cursor: pointer;
+      }
+    }
+  }
+  &__select {
+    outline: none;
+  }
+  &__option {
+    margin: 0.5rem;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  &__btn {
+    background-color: $color-primary;
+    color: $color-primary-light-1;
+    border: $border-default;
+    border-radius: $border-radius-small;
+    padding: 1rem 2rem;
+    text-transform: uppercase;
+    font-size: $font-size-default;
+    font-weight: $font-weight-large-1;
+    letter-spacing: 0.1rem;
+    @include hover-el($box-shadow-default);
+    width: 100%;
+    text-align: center;
+    margin: 3rem auto;
+    &--account {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+      margin: 0 auto;
+    }
+  }
+  &__icon {
+    width: 2.5rem;
+    height: 2.5rem;
+    fill: $color-primary-light-1;
+    // margin-top: 1rem;
+  }
+}

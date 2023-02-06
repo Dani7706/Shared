@@ -1,0 +1,44 @@
+.pagination {
+  grid-column: center-start/center-end;
+  width: 40%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  &__btn {
+    background-color: $color-primary;
+    border: none;
+    border-radius: $border-radius-small;
+    padding: 0.5rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s;
+    &:hover {
+      transform: scale(1.1);
+      cursor: pointer;
+    }
+  }
+  &__icon {
+    width: 2.5rem;
+    height: 2.5rem;
+    fill: $color-primary-light-2;
+  }
+  &__link {
+    &:link,
+    &:visited {
+      color: $color-default;
+      transition: all 0.5s;
+      border-radius: $border-radius-circle;
+      font-size: $font-size-larger-1;
+      padding: 0.5rem 1.5rem;
+      backface-visibility: hidden;
+    }
+    &:hover,
+    &:active {
+      transform: scale(1.2);
+      border: $border-default;
+      box-shadow: $box-shadow-default;
+    }
+  }
+}

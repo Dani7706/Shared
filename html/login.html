@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,700&family=Montserrat:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="node_modules/froala-editor/css/froala_editor.pkgd.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script
+      type="text/javascript"
+      src="node_modules/froala-editor/js/froala_editor.pkgd.min.js"
+    ></script>
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>Shared</title>
+  </head>
+  <body>
+    <header class="header">
+      <a href="../html/index.html" class="header__logo">
+        <img src="../img/logo.svg" alt="Logo" class="logo" />
+      </a>
+      <form action="#" class="header__search">
+        <input type="text" class="header__input" placeholder="Search" />
+        <button class="btn--search">
+          <svg class="header__search__icon">
+            <use xlink:href="../img/sprite.svg#icon-search"></use>
+          </svg>
+        </button>
+      </form>
+      <button class="header__menu__btn" id="icon-open">
+        <svg class="header__menu__icon">
+          <use xlink:href="../img/sprite.svg#icon-bars"></use>
+        </svg>
+      </button>
+      <div class="header__menu__background">&nbsp;</div>
+      <div class="header__menu">
+        <svg class="header__menu__icon--close" id="icon-close">
+          <use xlink:href="../img/sprite.svg#icon-close"></use>
+        </svg>
+        <ul class="header__menu__list">
+          <li class="header__menu__item">
+            <a href="../html/index.html" class="header__menu__link">Начало</a>
+          </li>
+          <li class="header__menu__item">
+            <a href="../html/all.html" class="header__menu__link">Споделено</a>
+          </li>
+          <li class="header__menu__item">
+            <a href="../html/share.html" class="header__menu__link">Сподели</a>
+          </li>
+
+          <li class="header__menu__item">
+            <a href="../html/login.html" class="header__menu__link"
+              >Вход в акаунта</a
+            >
+          </li>
+          <li class="header__menu__item">
+            <a href="../html/register.html" class="header__menu__link"
+              >Регистрирай се</a
+            >
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <section class="hero__section">
+        <div class="hero__text-box">
+          <h1 class="hero__title">Животът е по-хубав, когато е споделен!</h1>
+          <div class="hero__description">
+            <p class="hero__description__item">
+              Споделете как се чувствате, какви са вашите радости и неволи.
+            </p>
+            <p class="hero__description__item">
+              Споделете постиженията на децата си.
+            </p>
+            <p class="hero__description__item">
+              Разкажете за приключенията на вашите домашни палавници.
+            </p>
+            <p class="hero__description__item">
+              Или просто споделете опита си с цветята.
+            </p>
+          </div>
+          <a href="share.html" class="btn--share">Споделете</a>
+        </div>
+      </section>
+      <section class="articles__last">
+        <div class="container">
+          <form action="#" class="form">
+            <h2>Вход</h2>
+            <div class="form__group">
+              <label class="form__label" for="title">*Потребителско име</label>
+              <input type="text" class="form__input" id="title" />
+            </div>
+            <div class="form__group">
+              <label class="form__label" for="title">*Парола</label>
+              <input type="password" class="form__input" id="title" />
+            </div>
+
+            <button class="form__btn form__btn--account">потвърди</button>
+            <a
+              href="../html/register.html"
+              class="form__btn form__btn--account"
+            >
+              Нямаш акаунт? Регистрирай се
+            </a>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <a href="index.html" class="footer__img">
+        <img src="../img/logo.svg" alt="Logo" />
+      </a>
+    </footer>
+    <script src="../scripts/script.js"></script>
+  </body>
+</html>

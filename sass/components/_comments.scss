@@ -1,0 +1,90 @@
+.comments {
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  width: 100%;
+}
+.comment {
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    transform: skew(-10deg);
+  }
+  //   &__form > * {
+
+  //   }
+  &__input {
+    padding: 1rem;
+    font-size: $font-size-default;
+    border: $border-default;
+    border-radius: $border-radius-small;
+    &::placeholder {
+      color: $color-default;
+      transform: skew(10deg);
+    }
+  }
+  &__btn {
+    width: 20%;
+    align-self: flex-end;
+    padding: 1rem 2rem;
+    font-size: $font-size-default;
+    letter-spacing: 0.1rem;
+    border: none;
+    border-radius: $border-radius-small;
+    background-color: $color-primary;
+    color: $color-primary-light-1;
+    text-align: center;
+    @include hover-el($box-shadow-default);
+  }
+  &__box {
+    border: $border-default;
+    transform: skew(-10deg);
+    padding: 1rem 2rem;
+    border-radius: $border-radius-small;
+  }
+  &__box > * {
+    transform: skew(10deg);
+  }
+  &__text {
+    font-size: $font-size-default;
+  }
+  &__shape {
+    width: 8rem;
+    height: 8rem;
+    float: left;
+    shape-outside: circle(50% at 50% 50%);
+    clip-path: circle(50% at 50% 50%);
+    margin-right: 2rem;
+    position: relative;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  &__img {
+    height: 100%;
+    width: 100%;
+  }
+  &__caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 20%);
+    text-transform: uppercase;
+    opacity: 0;
+    transition: all 0.5s;
+    font-size: $font-size-small-2;
+    // &:hover {
+
+    // }
+  }
+  &__shape:hover &__caption {
+    opacity: 1;
+    transform: translate(-40%, -40%);
+    color: $color-primary-light-1;
+  }
+  &__shape:hover &__img {
+    filter: blur(3px) brightness(80%);
+  }
+}

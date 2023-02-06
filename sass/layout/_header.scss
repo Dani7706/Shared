@@ -1,0 +1,137 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem 3rem;
+  background-color: rgba($color-primary-light-2, 0.4);
+  border-bottom: $border-default;
+  position: relative;
+  &__search {
+    display: flex;
+    width: 30%;
+    justify-content: center;
+    @media only screen and (max-width: 56.25em) {
+      width: 60%;
+    }
+    &__icon {
+      width: 2rem;
+      height: 2rem;
+
+      @extend .icon;
+    }
+  }
+  &__input {
+    padding: 1rem 2rem;
+    border: none;
+    background-color: $color-primary-light-2;
+    margin-right: -4rem;
+    width: 90%;
+    border-radius: $border-radius-big;
+    font-size: $font-size-default;
+    color: $color-default;
+    transition: all 0.5s;
+    &::placeholder {
+      font-size: $font-size-default;
+      color: $color-primary-dark-1;
+    }
+    &:focus {
+      outline: none;
+      width: 100%;
+    }
+  }
+
+  &__menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    opacity: 0;
+    width: 0;
+    height: 80vh;
+    z-index: 15;
+    transition: transform 1s cubic-bezier(0.65, 0, 0.35, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media only screen and (max-width: 31.25em) {
+      height: 60vh;
+    }
+    &__list {
+      display: flex;
+      flex-direction: column;
+      gap: 3rem;
+      font-size: $font-size-larger-2;
+    }
+    &__link {
+      &:link,
+      &:visited {
+        background-image: linear-gradient(
+          120deg,
+          transparent 0%,
+          transparent 50%,
+          $color-white 50%
+        );
+        background-size: 250%;
+        color: $color-default;
+        transition: all 0.5s;
+        padding: 1rem 2rem;
+        text-transform: uppercase;
+      }
+      &:hover {
+        background-position: 100%;
+        transform: translateX(1px);
+      }
+    }
+
+    &__background {
+      width: 2rem;
+      height: 2rem;
+      border-radius: 50%;
+      position: fixed;
+      top: 3rem;
+      right: 3rem;
+      background-image: radial-gradient(
+        $color-primary-light-1,
+        $color-primary-dark-1
+      );
+      z-index: 0;
+      opacity: 0;
+      transition: transform 1s cubic-bezier(0.65, 0, 0.35, 1);
+    }
+    &__scale {
+      transform: scale(220);
+
+      opacity: 1;
+      background-color: $color-primary-dark-1;
+      z-index: 5;
+    }
+    &__btn {
+      background-color: $color-primary-light-2;
+      border: $border-default;
+      padding: 0.4rem;
+      border-radius: $border-radius-small;
+      @include hover-el(none);
+    }
+    &__icon {
+      width: 3rem;
+      height: 3rem;
+      @extend .icon;
+      &--close {
+        @extend .icon;
+        width: 4rem;
+        height: 4rem;
+        border-radius: $border-radius-circle;
+        padding: 0.5rem;
+        position: fixed;
+        top: 2rem;
+        right: 2rem;
+        @include hover-el($box-shadow-default);
+      }
+    }
+  }
+  &__logo {
+    @include hover-el(none);
+  }
+}
+.logo {
+  height: 3rem;
+}
